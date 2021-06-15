@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import 'full-page-scroll.css';
 
 * {
     padding: 0;
@@ -16,7 +17,6 @@ html, body {
 .container{
     width: 100%;
     height: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     position: relative;
