@@ -8,20 +8,22 @@
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
 
-/*import fullpage from 'fullpage.js';
+import './js/full-page-scroll';
 
-new fullpage('#fullpage', {
-    //options here
-    autoScrolling:true,
-    scrollHorizontally: true
-});*/
+new fullScroll({
+    mainElement: "container",
+    displayDots: true,
+    dotsPosition: "right",
+    animateTime: 0.5,
+    animateFunction: "ease",
+});
 
 import './js/particles.min';
 import * as particleData from './particles.json'
 
 particlesJS("particles-js",particleData);
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+/*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -29,4 +31,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
-});
+});*/
